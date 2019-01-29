@@ -12,6 +12,7 @@
 #include "BLEDescriptor.h"
 #include "BLEDevice.h"
 #include "BLEFixedLengthCharacteristic.h"
+#include "BLECharArrayCharacteristic.h"
 #include "BLELocalAttribute.h"
 #include "BLEProgmemConstantCharacteristic.h"
 #include "BLERemoteAttribute.h"

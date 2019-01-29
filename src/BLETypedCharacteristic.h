@@ -22,6 +22,10 @@ template<typename T> class BLETypedCharacteristic : public BLEFixedLengthCharact
     bool setValueBE(T value);
     T valueBE();
 
+    bool setValue( const unsigned char value[], unsigned char length ){
+	return this->BLECharacteristic::setValue( value, length );
+    }
+
   private:
     T byteSwap(T value);
 };
